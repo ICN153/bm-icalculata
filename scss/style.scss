@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  padding: 86px 116px;
+
+  .hero-text {
+    width: 450px;
+    margin-top: 90px;
+    
+    
+    h1 {
+      
+      font-family: "Inter", sans-serif;
+      font-size: 64px;
+      line-height: 100%;
+      font-weight: bold;
+      font-style: normal;
+      letter-spacing: -5px;
+      
+    }
+
+    p {
+      color: #5E6E85;
+      width: 465px;
+      font-family: "Inter", sans-serif;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: 0px;
+      margin-top: 35px;
+      
+    }
+    
+  }
+
+  .card{
+    
+    p{
+      font-size: 24px;
+      font-weight: bold;
+      line-height: auto;
+      font-family: "Inter", sans-serif;
+    }
+
+    input[type="radio"] {
+    margin-top: 32px; 
+    width: 20px;
+    height: 20px;
+    box-shadow: 0 0 20px rgba(225, 231, 254);
+    }
+
+    label {
+      padding: 18px ;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 150%;
+      font-family: "Inter", sans-serif;
+      margin-right: 168px;
+      text-transform: uppercase;
+    }
+  }
+
+  .frame{
+    display: block;
+    padding-top: 32px;
+  }
+} 
+
