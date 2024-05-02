@@ -39,19 +39,29 @@
               <img src="img/Rectangle 11.svg" alt="" />
             </span>
 
-            <input type="radio" id="opcao1" name="opcao" value="opcao1" />
-            <label for="opcao">metric</label>
-
-            <input type="radio" id="opcao2" name="opcao" value="opcao2" />
-            <label for="opcao">imperial</label>
-
-            <div class="border-one">
-              <div>
-                <label class="label">Height <input type="text" /></label>
+            <div class="geral">
+              <div class="radio-cm">
+                <input type="radio" id="opcao1" name="opcao" value="opcao1" />
+                <label for="opcao">Metric</label>
               </div>
 
-              <div>
-                <label class="label">Weight <input type="text" /></label>
+              <div class="radio-kg">
+                <input type="radio" id="opcao2" name="opcao" value="opcao2" />
+                <label for="opcao">Imperial</label>
+              </div>
+            </div>
+
+            <div class="form">
+              <p></p>
+              <div class="custom-input">
+                <input type="number" value="0" />
+                <span>cm</span>
+              </div>
+
+              <p></p>
+              <div class="custom-input">
+                <input type="number1" value="0" />
+                <span>kg</span>
               </div>
             </div>
 
@@ -119,7 +129,6 @@
 
     <!-- Primeiro limitation -->
     <div class="container bmi-limitations">
-
       <div class="limitations">
         <h2>Limitations of BMI</h2>
         <p>
@@ -129,24 +138,24 @@
           beneficial to use.
         </p>
       </div>
-      
-        <div class="category">
-          <div class="card-1">
-            <img src="img/genero.svg" alt="" />
-            <h4>Gender</h4>
-          </div>
-  
-          <p class="pcard-1">
-            The development and body fat composition of girls and boys vary with
-            age. Consequently, a child's age and gender are considered when
-            evaluating their BMI.
-          </p>
+
+      <div class="category">
+        <div class="card-1">
+          <img src="img/genero.svg" alt="" />
+          <h4>Gender</h4>
         </div>
+
+        <p class="pcard-1">
+          The development and body fat composition of girls and boys vary with
+          age. Consequently, a child's age and gender are considered when
+          evaluating their BMI.
+        </p>
       </div>
-    
-     <!-- Segunda parte, no scss sendo tratado como category2 e category3 -->
-     <div class="container bmi-limitations-02">
-        
+    </div>
+
+    <!-- Segunda parte, no scss sendo tratado como category2 e category3 -->
+
+    <div class="container bmi-limitations-02">
       <div class="category2">
         <div class="card-2">
           <img src="img/bolo.svg" alt="" />
@@ -154,7 +163,8 @@
         </div>
 
         <p class="pcard-2">
-          In aging individuals, increased body fat and muscle loss may cause BMI to underestimate body fat content.
+          In aging individuals, increased body fat and muscle loss may cause BMI
+          to underestimate body fat content.
         </p>
       </div>
 
@@ -165,24 +175,25 @@
         </div>
 
         <p class="pcard-3">
-          BMI may misclassify muscular individuals as overweight or obese, as it doesn't differentiate muscle from fat.
+          BMI may misclassify muscular individuals as overweight or obese, as it
+          doesn't differentiate muscle from fat.
         </p>
       </div>
-     </div>
+    </div>
 
-     <!-- Terceira Parte -->
+    <!-- Terceira Parte -->
 
-     <div class="container bmi-limitations-04">
-        
+    <div class="container bmi-limitations-04">
       <div class="category4">
-
         <div class="card-4">
           <img src="img/carinha.svg" alt="" />
           <h4>Pregnancy</h4>
         </div>
 
         <p class="pcard-4">
-          Expectant mothers experience weight gain due to their growing baby. Maintaining a healthy pre-pregnancy BMI is advisable to minimise health risks for both mother and child.
+          Expectant mothers experience weight gain due to their growing baby.
+          Maintaining a healthy pre-pregnancy BMI is advisable to minimise
+          health risks for both mother and child.
         </p>
       </div>
 
@@ -193,9 +204,11 @@
         </div>
 
         <p class="pcard-5">
-          Certain health concerns may affect individuals of some Black and Asian origins at lower BMIs than others. To learn more, it is advised to discuss this with your GP or practice nurse.
+          Certain health concerns may affect individuals of some Black and Asian
+          origins at lower BMIs than others. To learn more, it is advised to
+          discuss this with your GP or practice nurse.
         </p>
       </div>
-     </div>
+    </div>
   </body>
 </html>
