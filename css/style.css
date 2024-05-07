@@ -8,14 +8,15 @@
 .container {
   max-width: 1160px;
   margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .hero {
-  height: 737px;
+  height: auto;
   background-repeat: no-repeat;
   background-image: url(../img/Rectangle\ 6.png);
   padding-top: 87px;
-  margin-left: 28px;
 }
 .hero .flex-hero {
   display: flex;
@@ -23,7 +24,7 @@
   justify-content: space-between;
 }
 .hero .hero-text {
-  width: 564px;
+  max-width: 564px;
   margin-top: 120px;
   box-sizing: border-box;
 }
@@ -87,15 +88,11 @@
 .hero .form {
   display: flex;
 }
-.hero p {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 150%;
-  color: #5E6E85;
-  margin-top: 8px;
-}
-.hero .custom-input {
+.hero .form .group-input {
   margin-top: 32px;
+}
+.hero .form .custom-input {
+  margin-top: 8px;
   margin-right: 24px;
   width: 239px;
   height: 69px;
@@ -105,7 +102,7 @@
   display: flex;
   align-items: center;
 }
-.hero .custom-input span {
+.hero .form .custom-input span {
   padding: 0 5px;
   color: #888;
   font-weight: 600;
@@ -113,7 +110,7 @@
   color: #345FF6;
   margin-right: 24px;
 }
-.hero .custom-input input {
+.hero .form .custom-input input {
   width: 100%;
   height: 100%;
   border: none;
@@ -121,12 +118,19 @@
   font-size: inherit;
   outline: none;
 }
-.hero .custom-input input[type=number],
-.hero .custom-input input[type=number1] {
+.hero .form .custom-input input[type=number],
+.hero .form .custom-input input[type=number1] {
   font-weight: 600;
   font-size: 24px;
   color: #5E6E85;
   margin-left: 24px;
+}
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #5E6E85;
+  margin-top: 8px;
 }
 
 .welcome {
@@ -156,19 +160,21 @@
 
 .result {
   display: flex;
+  align-items: flex-end;
+  -moz-column-gap: 115px;
+       column-gap: 115px;
 }
 .result .image {
-  width: 564px;
+  max-width: 564px;
   margin-bottom: 35px 0;
 }
 .result .content {
-  width: 465px;
+  max-width: 465px;
   margin-top: 248px;
-  padding-left: 115px;
 }
 .result .content h2 {
   padding-bottom: 35px;
-  width: 500px;
+  max-width: 500px;
   font-weight: 600;
   font-size: 48px;
   line-height: 110%;
@@ -176,7 +182,7 @@
   text-shadow: 3px 4px 5px rgba(85, 160, 207, 0.7);
 }
 .result .content p {
-  width: 465px;
+  max-width: 465px;
   font-weight: 400;
   font-size: 16px;
   color: #5e6e85;
@@ -194,6 +200,8 @@
 .Rectangle .Rectangle-hero {
   display: flex;
   height: 234px;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
 }
 .Rectangle .Rectangle-hero img {
   margin-bottom: 45px;
@@ -207,17 +215,10 @@
   text-shadow: 3px 4px 5px rgba(30, 122, 180, 0.7);
 }
 .Rectangle .Rectangle-hero p {
-  width: 365px;
   font-size: 16px;
   font-weight: 400;
   line-height: 150%;
   color: #5E6E85;
-}
-.Rectangle .Rectangle-hero .option-1 p {
-  margin-right: 32px;
-}
-.Rectangle .Rectangle-hero .option-2 p {
-  margin-right: 16px;
 }
 
 .bmi-limitations {
@@ -380,16 +381,17 @@
   color: #5E6E85;
 }
 
-@media (max-width: 768px) {
-  .container {
+@media (max-width: 1200px) {
+  .logo {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+  }
+  .hero {
+    background-position: right;
   }
   .hero-text {
     display: block;
-    width: 686px;
+    max-width: 686px;
   }
   .hero-text img {
     display: block;
@@ -421,15 +423,34 @@
     width: 100%;
   }
   .result {
+    -moz-column-gap: 75px;
+         column-gap: 75px;
+  }
+  .result .content {
+    max-width: 380px;
+  }
+  .result .image {
+    max-width: 330px;
+  }
+  .result .image img {
+    width: 100%;
+  }
+  .Rectangle {
+    margin: 100px 0;
+  }
+  .Rectangle .Rectangle-hero {
+    height: auto;
+    flex-direction: column;
+    row-gap: 40px;
+  }
+  .Rectangle .Rectangle-hero .option {
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 841px;
-    margin-top: 90px;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
   }
-  .image img {
-    width: 435px;
-    margin-top: 220px;
+  .Rectangle .Rectangle-hero .option img {
+    margin: 0;
   }
   h2 {
     max-width: 100%;
@@ -442,6 +463,15 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 150%;
-    text-align: justify;
+  }
+}
+@media (max-width: 767px) {
+  .result {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .result .content {
+    margin-top: 0;
   }
 }/*# sourceMappingURL=style.css.map */
