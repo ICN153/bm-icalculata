@@ -33,7 +33,7 @@
   font-style: normal;
   font-weight: 600;
   letter-spacing: -5px;
-  text-shadow: 3px 4px 5px rgba(73, 64, 64, 0.7);
+  text-shadow: 3px 4px 5px rgba(99, 121, 227, 0.7);
 }
 .hero .hero-text p {
   color: black;
@@ -378,4 +378,70 @@
   font-weight: 400;
   line-height: 150%;
   color: #5E6E85;
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-text {
+    display: block;
+    width: 686px;
+  }
+  .hero-text img {
+    display: block;
+    align-items: center;
+  }
+  .hero-text h1 {
+    display: block;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 110%;
+    text-align: center;
+    align-items: center;
+  }
+  .hero-text p {
+    font-weight: 400;
+    line-height: 150%;
+    font-size: 16px;
+    text-align: center;
+    align-items: center;
+  }
+  .flex-hero {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-text {
+    margin-bottom: 40px;
+  }
+  .card {
+    width: 100%;
+  }
+  .result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 841px;
+    margin-top: 90px;
+  }
+  .image img {
+    width: 435px;
+    margin-top: 220px;
+  }
+  h2 {
+    max-width: 100%;
+    font-size: 32px !important;
+    font-weight: 600;
+    line-height: 115%;
+  }
+  p {
+    max-width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: justify;
+  }
 }/*# sourceMappingURL=style.css.map */
