@@ -12,11 +12,17 @@
   padding-right: 40px;
 }
 
+.logo img {
+  margin-top: 85px;
+}
+
 .hero {
-  height: auto;
+  max-width: 978px;
+  height: 737px;
   background-repeat: no-repeat;
   background-image: url(../img/Rectangle\ 6.png);
-  padding-top: 87px;
+  border-radius: 35px;
+  margin-left: 28px;
 }
 .hero .flex-hero {
   display: flex;
@@ -37,7 +43,7 @@
   text-shadow: 3px 4px 5px rgba(99, 121, 227, 0.7);
 }
 .hero .hero-text p {
-  color: black;
+  width: 465px;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0px;
@@ -45,29 +51,37 @@
   text-shadow: 3px 4px 5px rgba(54, 47, 47, 0.5);
 }
 .hero .card {
-  width: 564px;
+  margin-top: -18px;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
+  max-width: 100%;
   border: 1px solid transparent;
   background-color: #ffffff;
-  border-radius: 10px;
+  border-radius: 16px;
   padding: 32px;
+  box-shadow: 3px 4px 5px rgba(97, 102, 235, 0.5);
   text-shadow: 3px 4px 5px rgba(97, 102, 235, 0.9);
 }
-.hero .card .paragraph1 {
+
+.paragraph1 {
   font-size: 24px;
   font-weight: bold;
   line-height: auto;
   color: #000000;
 }
-.hero .card .frame img {
+
+.frame img {
   width: 240px;
   margin-top: 32px;
 }
-.hero .card .geral {
+
+.geral {
   display: flex;
-  gap: 140px;
+  -moz-column-gap: 155px;
+       column-gap: 155px;
   margin-top: 32px;
 }
-.hero .card .geral .radio-cm label {
+.geral .radio-cm label {
   margin: 8px;
   text-transform: capitalize;
   font-weight: 600;
@@ -76,22 +90,26 @@
   line-height: 150%;
   color: #000000;
 }
-.hero .card .geral .radio-kg label {
+.geral .radio-kg label {
   margin: 8px;
   text-transform: capitalize;
-  margin-right: 30px;
   font-size: 16px;
   line-height: 150%;
   font-weight: 600;
   color: #000000;
 }
-.hero .form {
+
+.form {
   display: flex;
 }
-.hero .form .group-input {
+.form .group-input {
   margin-top: 32px;
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 400;
+  color: #5E6E85;
 }
-.hero .form .custom-input {
+.form .custom-input {
   margin-top: 8px;
   margin-right: 24px;
   width: 239px;
@@ -102,7 +120,7 @@
   display: flex;
   align-items: center;
 }
-.hero .form .custom-input span {
+.form .custom-input span {
   padding: 0 5px;
   color: #888;
   font-weight: 600;
@@ -110,7 +128,7 @@
   color: #345FF6;
   margin-right: 24px;
 }
-.hero .form .custom-input input {
+.form .custom-input input {
   width: 100%;
   height: 100%;
   border: none;
@@ -118,13 +136,14 @@
   font-size: inherit;
   outline: none;
 }
-.hero .form .custom-input input[type=number],
-.hero .form .custom-input input[type=number1] {
+.form .custom-input input[type=number],
+.form .custom-input input[type=number1] {
   font-weight: 600;
   font-size: 24px;
   color: #5E6E85;
   margin-left: 24px;
 }
+
 p {
   font-weight: 400;
   font-size: 14px;
@@ -161,6 +180,7 @@ p {
 .result {
   display: flex;
   align-items: flex-end;
+  justify-content: center !important;
   -moz-column-gap: 115px;
        column-gap: 115px;
 }
@@ -381,7 +401,7 @@ p {
   color: #5E6E85;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   .logo {
     display: flex;
     justify-content: center;
@@ -417,17 +437,35 @@ p {
     flex-direction: column;
   }
   .hero-text {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
   .card {
-    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   .result {
     -moz-column-gap: 75px;
          column-gap: 75px;
+    margin-top: 135px;
   }
   .result .content {
     max-width: 380px;
+  }
+  .result .content h2 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 115%;
+    color: #253347;
+  }
+  .result .content p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #5E6E85;
   }
   .result .image {
     max-width: 330px;
@@ -451,18 +489,6 @@ p {
   }
   .Rectangle .Rectangle-hero .option img {
     margin: 0;
-  }
-  h2 {
-    max-width: 100%;
-    font-size: 32px !important;
-    font-weight: 600;
-    line-height: 115%;
-  }
-  p {
-    max-width: 100%;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 150%;
   }
 }
 @media (max-width: 767px) {
