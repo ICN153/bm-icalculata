@@ -289,11 +289,13 @@ p {
 }
 
 .bmi-limitations-02 {
-  width: 762px;
+  max-width: 100%;
   display: flex;
+  margin-left: 320px;
   padding: 38px;
 }
 .bmi-limitations-02 .category2 {
+  max-width: 365px;
   margin-left: 140px;
   margin-right: 32px;
   border: 1px solid #ffffff;
@@ -345,6 +347,7 @@ p {
 }
 
 .bmi-limitations-04 {
+  max-width: 100%;
   display: flex;
   margin-bottom: 120px;
 }
@@ -401,7 +404,7 @@ p {
   color: #5E6E85;
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 1044px) {
   .logo {
     display: flex;
     justify-content: center;
@@ -513,29 +516,111 @@ p {
     margin-left: 0px;
   }
   .bmi-limitations-02 {
+    max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 50px;
+    margin-right: 480px;
   }
   .bmi-limitations-04 {
     max-width: 100%;
-  }
-  .bmi-limitations-04 .category4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    margin-left: 83px;
+    margin-right: 175px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+  .logo img {
+    display: flex;
+    justify-content: center;
+  }
+  .hero {
+    margin: 0;
+    border-radius: 32px;
+    border-bottom-left-radius: 0;
+  }
+  .flex-hero {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .flex-hero .hero-text {
+    width: 327px;
+  }
+  .flex-hero .hero-text p {
+    width: 327px;
+  }
+  .card {
+    max-width: 328px;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .card p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: auto;
+  }
+  .card .frame img {
+    display: none;
+  }
+  .card .geral {
+    display: flex;
+    -moz-column-gap: 24px;
+         column-gap: 24px;
+  }
+  .card .geral input {
+    max-width: 100%;
+  }
+  .card .geral .radio-kg label {
+    margin-left: 5px;
+  }
+  .card .form {
+    display: block;
+  }
+  .welcome {
+    max-width: 100%;
+    display: block;
+    justify-content: center;
+  }
   .result {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    padding-top: 425px;
   }
   .result .content {
     margin-top: 0;
+  }
+  .result .content h2 {
+    font-size: 25px;
+    margin-top: 16px;
+    text-align: center;
+  }
+  .result .content p {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 400;
+  }
+  .bmi-limitations {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .bmi-limitations .limitations {
+    font-size: 32px;
+    line-height: 110%;
+    line-height: 600;
+  }
+  .bmi-limitations-02 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 }/*# sourceMappingURL=style.css.map */
