@@ -24,7 +24,7 @@
   background-repeat: no-repeat;
   background-image: url(../img/Rectangle\ 6.png);
   border-radius: 35px;
-  //padding: 86px 116px;
+  //padding: 86px 116px;'
   //padding-top: 87px;
   margin-left: 28px;
 
@@ -92,6 +92,7 @@
 
     .geral {
       //padding: 24px;
+      max-width: 100%;
       display: flex;
       column-gap: 155px;
       margin-top: 32px;
@@ -184,6 +185,7 @@
 
 
 p {
+  
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
@@ -199,7 +201,7 @@ p {
   background-image: url(../img/Frame\ 1.png);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 500px;
+  max-width: 500px;
   height: 130px;
   margin-top: 32px;
   padding: 32px;
@@ -516,7 +518,7 @@ p {
   }
 
   .hero{
-    background-position: right;
+
   }
 
   .hero-text {
@@ -569,7 +571,7 @@ p {
 
   .result {
     column-gap: 75px;
-    margin-top: 135px;
+    margin-top: 72px;
     
     .content {
       max-width: 380px;
@@ -673,6 +675,7 @@ p {
     img{
       display: flex;
       justify-content: center;
+      margin-top: 32px;
     }
   }
 
@@ -692,6 +695,7 @@ p {
 
   .hero-text{
     width: 327px;
+    margin-top: 20px;
     h1{
       
     }
@@ -709,8 +713,12 @@ p {
   align-items: center;
   justify-content: center;
 
-  p{
-    text-align: center;
+  .paragraph1{
+    margin: 24px;
+  }
+
+  p{    
+    margin-right: 24px;
     font-weight: 600;
     font-size: 20px;
     line-height: auto;
@@ -722,29 +730,42 @@ p {
   }
 
   .geral{
+    margin: 24px;   
     display: flex;
     column-gap: 24px;
+    margin-top: 20px;
    
     input{
+   
       max-width: 100%;
+     
     }
 
     .radio-kg{
       label{
+      
         margin-left: 5px;
       }
     }
   }
 
   .form{
+    margin: 24px;
     display: block;
+    
+
   }
  }
 
  .welcome{
-  max-width: 100%;
-  display: block;
-  justify-content: center;
+  max-width: 244px;
+ margin-left: 22px;
+  align-items: center;
+  background-position: center;
+ padding: 24px;
+  height: auto;
+ border-radius: 16px;
+ margin-top: 24px;
 }
 
 
@@ -772,12 +793,13 @@ p {
   }
 
   .bmi-limitations{
+    
     display: flex;
     justify-content: center;
     flex-direction: column;
-
+    
     .limitations{
-      
+      margin-bottom: 56px;
       font-size: 32px;
       line-height: 110%;
       line-height: 600;
@@ -785,14 +807,36 @@ p {
   }
 
   .bmi-limitations-02{
+    
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-
+    margin: 0 5px 16px;
+    
     .category2{
- 
+     margin: 0;
+      margin-bottom: 40px;
       
     }
   }
+
+  .bmi-limitations-04{
+   margin-left: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+  .category5{
+    margin-top: 40px;
+    margin-left: 200px;
+  }  
+
+  .category{
+    
+    margin-top: 40px;
+    margin-left: 191px;
+  }
+  }
+
 }
